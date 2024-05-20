@@ -46,7 +46,7 @@ lazy val plugin = project
     },
     scriptedBufferLog := false,
     scriptedLaunchOpts := { scriptedLaunchOpts.value ++
-      Seq("-Xmx1024M", "-XX:MaxPermSize=256M", "-Dplugin.version=" + version.value)
+      Seq("-Xmx1024M", "-Dplugin.version=" + version.value)
     },
     buildInfoKeys := Seq[BuildInfoKey](name, version, scalaVersion, sbtVersion),
     buildInfoPackage := "com.eed3si9n.ifdef.sbtifdef",
